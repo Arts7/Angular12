@@ -1,0 +1,18 @@
+
+  <label>Nom</label>
+  <input [(ngModel)]=currentName/>
+  <br/>
+
+  <label>Prenom</label>
+  <input [(ngModel)]=currentSurname/>
+  <br/>
+
+  <label>Email</label>
+  <input [(ngModel)]=currentEmail />
+  <br/>
+
+  <label>Age</label>
+  <input [(ngModel)]=currentAge type="number" required #cawet/>
+  <br/>
+
+  <p>{{ currentAge | isMajeur}}</p>
